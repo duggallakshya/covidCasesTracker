@@ -1,0 +1,128 @@
+/* section h1,h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    
+}
+body{
+    background-color: black;
+    margin-top: 50px;
+}
+ul{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    background-color:greenyellow;
+    height: 15px;
+    width: 20px;
+}
+ul li {
+    list-style: none;
+    flex: 0 0 33.333333%;
+  } */
+
+  body {
+    background-color: rgb(68, 66, 66);
+    padding: 10px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+h1, p, h2 {
+    color: white;
+}
+
+ul{
+    list-style-type:none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card__main {
+    height: 200px;
+    width: 400px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    flex-direction: column;
+    /* position:fixed; */
+}
+
+.card__name{
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 2px 2px #3f1d1d;
+
+}
+
+.card__name span {
+    font-size: 15px;
+    
+}
+
+.card__total {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 4px 3px #3f1d1d;
+}
+
+.bgcolor1{
+    background-color: rgb(116, 116, 209);
+}
+
+.bgcolor2{
+    background-color: rgb(108, 214, 131);
+}
+
+.bgcolor3{
+    background-color: rgb(209, 136, 93);
+}
+
+.bgcolor4{
+    background-color: rgb(214, 108, 200);
+}
+
+.bgcolor5{
+    background-color: rgb(177, 175, 53);
+}
+
+.bgcolor6{
+    background-color: rgb(96, 192, 184);
+    /* margin: -100px; */
+}
+
+.bgcolor6 .card__total{
+    margin-top: -15px;
+}
+
+h1{
+    height: 80px;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-name: size;
+}
+
+@keyframes size {
+    from {
+      font-size:10px;
+      transform: translateY(25px);
+    }
+  
+    to {
+      font-size:15px;
+      transform: translateY(25px);
+    }
+  }
